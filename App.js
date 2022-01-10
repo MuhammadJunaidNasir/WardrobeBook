@@ -7,7 +7,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './Screens/HomeScreen';
 import LogInScreen from './Screens/LogInScreen';
 import SignUpScreen from './Screens/SignUpScreen';
-import ProductScreen from './Screens/ProductsScreen';
+import ProductScreen from './Screens/ProductScreen';
 
 
 
@@ -18,7 +18,7 @@ function App(){
                            <NavigationContainer>
                                
                                <Stack.Navigator>
-      <Stack.Screen name='Welcome To WardrobeBook' component={HomeScreen} options={{title: 'Welcome To WardrobeBook',
+      <Stack.Screen name='HomeScreen' component={HomeScreen} options={{title: 'Welcome To WardrobeBook',
           headerStyle: {
             backgroundColor: '#f4511e',
           },
@@ -28,9 +28,25 @@ function App(){
           },
         }}
 />
-                               <Stack.Screen name='LogInScreen' component={LogInScreen}  />
+     <Stack.Screen name='LogInScreen' component={LogInScreen} options={{title: 'LogIn To Your Account',
+          headerStyle: {
+            backgroundColor: '#f4511e',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }} />
                                <Stack.Screen name='SignUpScreen' component={SignUpScreen}  />
-                               <Stack.Screen name="ProductScreen" component={ProductScreen} />
+    <Stack.Screen name="ProductScreen" component={ProductScreen} options={{title: 'Clothing Products',
+          headerStyle: {
+            backgroundColor: '#f4511e',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}  />
                                
                                 </Stack.Navigator>
                                  
@@ -45,13 +61,7 @@ export default App;
 
 
 const styles= StyleSheet.create({
-  container1:{
-       flex:1,
-       justifyContent:'center',
-       alignItems:'center',
-       backgroundColor:'pink',
-       fontSize:35,
-},
+  
 
 
 
