@@ -1,0 +1,57 @@
+Introduction:
+                          We are making Wardrobebook application for online purchasing of clothes. Online shopping through app has become very popular these days because people find it convenient and easy to shop from their home or office. People can save their time and energy by purchasing products online with some discounts. The offers on the internet can be easily compared, and the buyer can buy the product according to their favorable conditions like price, quality and other discounts for their individual needs.
+
+
+
+
+1.	Management Module
+1.1.	Signup
+This feature will allow users to create account and register on the application.
+This feature will allow users to register with their google account.
+1.2.	Login
+This feature will allow users to login through their credentials.
+1.3.	Delete Account
+This feature will allow users to delete their account.
+1.4.	Update Details
+This feature will allow users to update their account details.
+1.5.	User Ratings
+This feature will allow users to rate each other.
+
+
+2.	Searching Module
+2.1.	Search Suggestions
+This feature will show relevant suggestions to user.
+2.2.	Search Filters
+This feature will allow users to set a price filter on their search.
+2.3.	Search Results
+This feature will show users the search results.
+2.4.	Home Feed
+This feature will allow users to view and browse through all the ads posted
+2.5.	View Details
+This feature will allow users to click on a specific ad and view its details.
+
+
+
+3.	Checkout Module
+3.1.	Order 
+This feature will allow the user to pick the order of any product
+3.2.	Information Detail
+This feature will allow the users to add the mail address along with the shipping details.
+3.3.	Payment
+This feature will allow the user to pay online for the products selected.
+
+
+
+4.	Admin Module
+4.1.	Add User 
+This feature will allow the admin to add user.
+4.2.	Delete User
+This feature will allow the admin to delete user.
+4.3.	Update Products
+This feature will allow the admin to update products.
+4.4.	Add Category
+This feature will allow the admin to add category.
+4.5.	Review Rating
+This feature will allow the admin to review rating.
+
+
