@@ -8,7 +8,7 @@ import HomeScreen from './Screens/HomeScreen';
 import LogInScreen from './Screens/LogInScreen';
 import SignUpScreen from './Screens/SignUpScreen';
 import ProductScreen from './Screens/ProductScreen';
-
+import MintoTShirt from './Screens/MintoTShirt'
 
 
 function App(){
@@ -47,6 +47,16 @@ function App(){
           },
         }}   />
     <Stack.Screen name="ProductScreen" component={ProductScreen} options={{title: '👜 Clothing Products',
+          headerStyle: {
+            backgroundColor: '#f4511e',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}  />
+
+        <Stack.Screen name="MintoTShirt" component={MintoTShirt} options={{title: '👕 Minto T-Shirt',
           headerStyle: {
             backgroundColor: '#f4511e',
           },
