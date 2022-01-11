@@ -17,7 +17,7 @@ export default class SignUpScreen extends Component{
  <TextInput style={{height:30,width:230, borderWidth:3, borderColor:"#1f0824", borderRadius:1,marginLeft:70,marginTop:15}}   placeholder='                        🔑 Confirm Your Password' autoFocus={true} autoCapitalize='none' secureTextEntry={true}  />                           
 
   <View style={{width:250,flexDirection:'row',marginLeft:70,marginTop:10}}>
-    <Button title="CREATE MY ACCOUNT" color="#1f0824" onPress={ ()=>{this.props.navigation.navigate('ProductScreen')} }   />
+    <Button title="CREATE MY ACCOUNT" color="#1f0824" onPress={ ()=>{alert('Account Created Succesfully')} }   />
                        
          </View>        
 
