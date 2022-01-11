@@ -46,7 +46,7 @@ function App(){
             fontWeight: 'bold',
           },
         }}   />
-    <Stack.Screen name="ProductScreen" component={ProductScreen} options={{title: 'Clothing Products',
+    <Stack.Screen name="ProductScreen" component={ProductScreen} options={{title: '👜 Clothing Products',
           headerStyle: {
             backgroundColor: '#f4511e',
           },
