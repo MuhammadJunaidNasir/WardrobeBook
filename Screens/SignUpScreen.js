@@ -1,8 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
+import {useState} from 'react';
 import {StyleSheet,View,Text,Button,TextInput} from 'react-native';
-export default class SignUpScreen extends Component{
-    render(){
-        return(
+
+  export default function SignUpScreen(){
+    const [email,setEmail]=useState('');
+    const [password,setPassword]=useState('');
+
+        const handleSignUp= (e)=>{
+             e.preventDefault()
+             console.log(email,password)
+        }
+
+          return(
 
                        <View style={{flex:1,backgroundColor:'#d2cdd3'}} >
                               
@@ -10,14 +19,14 @@ export default class SignUpScreen extends Component{
 
                               <Text style={{fontSize:18,marginTop:80,color:'#1f0824'}}> SignUp To Continue ➡️ </Text>
 
- <TextInput style={{height:30,width:230, borderWidth:3, borderColor:"#1f0824", borderRadius:1, marginBottom:20,marginLeft:70,marginTop:20}}   placeholder='                         📧 Enter Your Email' autoFocus={true} autoCapitalize='none'  />                    
+ <TextInput value={email} onChangeText={text=>setEmail(text)} style={{height:30,width:230, borderWidth:3, borderColor:"#1f0824", borderRadius:1, marginBottom:20,marginLeft:70,marginTop:20}}   placeholder='                         📧 Enter Your Email' autoFocus={true} autoCapitalize='none'  />                    
 
- <TextInput style={{height:30,width:230, borderWidth:3, borderColor:"#1f0824", borderRadius:1,marginLeft:70}}   placeholder='                        🔑 Enter Your Password' autoFocus={true} autoCapitalize='none' secureTextEntry={true}  />     
+ <TextInput value={password} onChangeText={text=>setPassword(text)} style={{height:30,width:230, borderWidth:3, borderColor:"#1f0824", borderRadius:1,marginLeft:70}}   placeholder='                        🔑 Enter Your Password' autoFocus={true} autoCapitalize='none' secureTextEntry={true}  />     
 
- <TextInput style={{height:30,width:230, borderWidth:3, borderColor:"#1f0824", borderRadius:1,marginLeft:70,marginTop:15}}   placeholder='                        🔑 Confirm Your Password' autoFocus={true} autoCapitalize='none' secureTextEntry={true}  />                           
+                          
 
   <View style={{width:250,flexDirection:'row',marginLeft:70,marginTop:10}}>
-    <Button title="CREATE MY ACCOUNT" color="#1f0824" onPress={ ()=>{alert('Account Created Succesfully')} }   />
+    <Button title="CREATE MY ACCOUNT" color="#1f0824" onPress={(e)=>handleSignUp(e)}   />
                        
          </View>        
 
@@ -34,4 +43,3 @@ export default class SignUpScreen extends Component{
                       </View>
         )
     }
-}
