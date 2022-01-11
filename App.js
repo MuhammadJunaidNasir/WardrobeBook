@@ -37,7 +37,15 @@ function App(){
             fontWeight: 'bold',
           },
         }} />
-                               <Stack.Screen name='SignUpScreen' component={SignUpScreen}  />
+     <Stack.Screen name='SignUpScreen' component={SignUpScreen} options={{title: 'Create a new account',
+          headerStyle: {
+            backgroundColor: '#f4511e',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+        }}   />
     <Stack.Screen name="ProductScreen" component={ProductScreen} options={{title: 'Clothing Products',
           headerStyle: {
             backgroundColor: '#f4511e',

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {StyleSheet,View,Text,Button,TextInput} from 'react-native';
 export default class LogInScreen extends Component{
+  
     render(){
         return(
 
@@ -19,7 +20,7 @@ export default class LogInScreen extends Component{
                        
          </View>        
 
-         <Text style={{marginTop:200,marginLeft:290}}> Are you a new user?  </Text> 
+         <Text style={{marginTop:200,marginLeft:270}}> Are you a new user? ⬇️  </Text> 
 
          <View style={{width:250,flexDirection:'row',marginLeft:310,marginTop:10}}>
         <Button title="Register" color="#1f0824" onPress={ ()=>{this.props.navigation.navigate('SignUpScreen')} }   />
