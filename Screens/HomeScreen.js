@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {StyleSheet,View,Text,Button,Image,ImageBackground} from 'react-native';
+import {StyleSheet,View,Text,Button} from 'react-native';
 
 
 export default class HomeScreen extends Component{
@@ -9,7 +9,7 @@ export default class HomeScreen extends Component{
                       <View style={{flex:1,backgroundColor:'#d2cdd3'}} >
                               
 
-          <Text style={{marginLeft:100,fontSize:30,marginTop:300,color:'#1f0824'}}> 👜 Wardrobebook</Text>
+          <Text style={{marginLeft:100,fontSize:30,marginTop:300,color:'#1f0824'}}> 👜 WardrobeBook</Text>
              
                           
 

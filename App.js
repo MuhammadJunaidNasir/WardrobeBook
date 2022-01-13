@@ -4,11 +4,13 @@ import {View,Text,StyleSheet,Button,FlatList,ScrollView,SafeAreaView,TextInput,A
 import {NavigationContainer} from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
+
+
 import HomeScreen from './Screens/HomeScreen';
 import LogInScreen from './Screens/LogInScreen';
 import SignUpScreen from './Screens/SignUpScreen';
 import ProductScreen from './Screens/ProductScreen';
-import MintoTShirt from './Screens/MintoTShirt'
+
 
 
 function App(){
@@ -28,7 +30,7 @@ function App(){
           },
         }}
 />
-     <Stack.Screen name='LogInScreen' component={LogInScreen} options={{title: 'LogIn To Your Account',
+     <Stack.Screen  name='LogInScreen' component={LogInScreen} options={{title: 'LogIn To Your Account',
           headerStyle: {
             backgroundColor: '#f4511e',
           },
@@ -56,15 +58,7 @@ function App(){
           },
         }}  />
 
-        <Stack.Screen name="MintoTShirt" component={MintoTShirt} options={{title: '👕 Minto T-Shirt',
-          headerStyle: {
-            backgroundColor: '#f4511e',
-          },
-          headerTintColor: '#fff',
-          headerTitleStyle: {
-            fontWeight: 'bold',
-          },
-        }}  />
+        
                                
                                 </Stack.Navigator>
                                  
